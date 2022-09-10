@@ -2,10 +2,10 @@
     using System.Collections.Generic;
     using UnityEngine;
 
-    public class PlayerController : MonoBehaviour{
+    public class PlayerMovement : MonoBehaviour{
 
         public float speed = 10f;
-        public Vector2 lastClickedPos;
+        Vector2 lastClickedPos;
         Vector2 lockPos;
         bool moving = false;
 
@@ -14,7 +14,6 @@
         }
 
         private void FixedUpdate(){
-            // MOVIMENTAÇÃO SEGUINDO O MOUSE
             if(Input.GetMouseButtonDown(0)){
                 lastClickedPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 moving = true;
@@ -32,7 +31,7 @@
         }
 
         void OnCollisionStay2D(Collision2D other) {
-            if(other.collider.bounds.Contains(transform.position + new Vector3(1,1,0))){
+            if(other.collider.bounds.Contains(transform.position)){
                 lastClickedPos = lockPos;
             }
         }
