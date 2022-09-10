@@ -1,10 +1,10 @@
 # GAMSECOMP 2022
  jogo feito para a gamejam GAMSECOMP 2022
  
- CapiChef
-  Controle uma adorável capivara a preparar pratos típicos da cultura brasileiro nesse ripoff de overcooked
+ CapiChef\n
+  Controle uma adorável capivara a preparar pratos típicos da cultura brasileiro nesse ripoff de overcooked\n\n
 
-Arte:
+Arte:\n
  Luiza Galvão Pereira de Campos
-Programação:
+Programação:\n
  Vitor Gabriel Orsin
