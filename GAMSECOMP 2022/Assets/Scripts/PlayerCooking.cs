@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class PlayerCooking : MonoBehaviour
 {       
-    public int temIngrediente;
-
-    private void Start() {
-        temIngrediente = 0;
-    }
+    public bool isHolding;
+    public bool isPlate;
+    public bool hasFeijoada;
+    public Ingrediente holding;
 }

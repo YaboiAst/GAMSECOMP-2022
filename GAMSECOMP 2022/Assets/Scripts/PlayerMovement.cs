@@ -5,6 +5,8 @@
     public class PlayerMovement : MonoBehaviour{
 
         public float speed = 10f;
+
+        
         Vector2 lastClickedPos;
         Vector2 lockPos;
         bool moving = false;
@@ -25,7 +27,7 @@
             else moving = false;
         }
 
-        private void OnCollisionEnter2D(Collision2D other) {
+        /*private void OnCollisionEnter2D(Collision2D other) {
             lockPos = transform.position;
             lastClickedPos = lockPos;
         }
@@ -34,5 +36,5 @@
             if(other.collider.bounds.Contains(transform.position)){
                 lastClickedPos = lockPos;
             }
-        }
+        }*/
     }

@@ -8,7 +8,7 @@ public class Interacoes : MonoBehaviour{
     public UnityEvent interacao;
 
     private void Update() {
-        if(isInRange && Input.GetKeyDown(KeyCode.Space) && interacao != null){
+        if(isInRange && Input.GetMouseButtonDown(0)){
             interacao.Invoke();
         }
     }
