@@ -4,7 +4,8 @@ using UnityEngine;
 
 [System.Serializable]
 public class Ingrediente : MonoBehaviour{
-    //public string nome;
+    public Sprite ingrediente;
+    public Sprite ingredienteCortado;
 
     public bool canCut;
     public bool canCook;

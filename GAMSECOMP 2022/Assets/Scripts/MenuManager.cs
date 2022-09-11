@@ -8,4 +8,8 @@ public class MenuManager : MonoBehaviour
     public void proximaCena(string cena){
         SceneManager.LoadScene(cena);
     }
+
+    public void Sair(){
+        Application.Quit();
+    }
 }
